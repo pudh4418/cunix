@@ -1,0 +1,23 @@
+作业2B：
+
+p1.c balls.{c,h} 即为本次作业的源代码。
+本次作业代码由相对现代的 C 语言，没有使用特殊的第三方库，在符合 POSIX 标准的平台均可编译运行。
+
+程序运行时要求输入12个整数，其中一个与其他不同。程序输出每次比较的方法以及比较前后对小球重量的判断。
+
+运行举例：
+$ ./p1
+5 5 5 5 6 5 5 5 5 5 5 5
+ bi  0  1  2  3  4  5  6  7  8  9 10 11
+  s UN UN UN UN UN UN UN UN UN UN UN UN
+Compare 0 1 2 3 to 4 5 6 7 .
+ bi  0  1  2  3  4  5  6  7  8  9 10 11
+  s UN UN UN UN UN UN UN UN  N  N  N  N
+Compare 4 1 2 3 to 0 8 9 10 .
+ bi  0  1  2  3  4  5  6  7  8  9 10 11
+  s ML  N  N  N MH  N  N  N  N  N  N  N
+Compare 4 to 1 .
+ bi  0  1  2  3  4  5  6  7  8  9 10 11
+  s  N  N  N  N  H  N  N  N  N  N  N  N
+Index of the different ball is 4, and it's heavier.
+
